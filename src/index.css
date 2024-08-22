@@ -1,0 +1,240 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: white;
+  color: black;
+  background-color: #f5f7fa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* .header {
+  background-color: blue;
+  color: white;
+  height: 100px;
+  width: 100%;
+} */
+/* .app {
+  margin: 0;
+  padding: 0;
+} */
+
+/* .header {
+  width: 100%;
+  height: 500px;
+  background-color: blue;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+} */
+/* .header {
+  width: 100vh;
+}
+
+#root {
+  padding: 0;
+} */
+
+.formComponent {
+  margin: auto auto;
+  height: 750px;
+  /* width: 70%; */
+  width: 700px;
+  background-color: white; /* Це приклад кольору фону, можна видалити або змінити */
+  padding: 30px 80px; /* Відступи всередині елемента */
+  margin: 0 auto; /* Центрування на сторінці */
+  box-sizing: border-box; /* Включає padding і border у ширину елемента */
+  padding-bottom: 200px;
+}
+
+.attention {
+  width: 100%;
+  background-color: #dbd8d0; /* Темний колір фону (можете змінити на інший) */
+  color: black; /* Білий колір тексту для контрасту */
+  padding: 10px; /* Внутрішні відступи, можна налаштувати */
+  margin: 0 auto; /* Центрування всередині батьківського блоку */
+  box-sizing: border-box; /* Враховує padding і border у ширині */
+  border-radius: 10px; /* Заокруглення сторін */
+  display: flex;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.attentionMessage {
+  margin-left: 20px;
+  font-size: 22px;
+  text-align: left;
+}
+
+.InputContainer {
+  padding: 0;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.inputData {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 4px;
+}
+
+.ExchangeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.Exchange {
+  margin-right: 10px; /* Відступ праворуч від тексту */
+}
+
+.ExchangeRate {
+  font-weight: bold;
+}
+
+.Divider {
+  border: none;
+  border-top: 3px dashed rgb(164, 164, 164); /* Збільшення ширини лінії */
+  margin: 10px 0; /* Відступи зверху і знизу */
+}
+
+.headContainer {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px; /* Висота контейнера */
+  background-color: #f0f0f0; /* Для наочності, можете змінити або видалити */
+  padding: 0 20px; /* Додає відступи зліва і справа для вмісту контейнера */
+  box-sizing: border-box; /* Щоб padding не впливав на загальні розміри контейнера */
+  position: relative; /* Позиціонування для зображення */
+  background-color: #0070e0;
+}
+
+.headerImg {
+  margin-left: 10%;
+  height: 100%; /* Висота зображення відповідатиме висоті контейнера */
+  width: auto; /* Зберігає пропорції зображення */
+  position: absolute;
+  left: 0; /* Закріплює зображення в лівому верхньому куті */
+}
+
+.headP {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px; /* Відстань між елементами */
+  font-weight: normal; /* Стандартна вага шрифту */
+  white-space: nowrap; /* Щоб текст не розбивався на кілька рядків */
+}
+
+/* #root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+} */
+
+@keyframes modalEntrance {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-enter {
+  animation: modalEntrance 0.6s ease-out forwards;
+}
+
+#root {
+  margin-top: 0;
+  padding-top: 0;
+}
