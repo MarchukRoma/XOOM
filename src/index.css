@@ -112,7 +112,7 @@ button:focus-visible {
   height: 750px;
   /* width: 70%; */
   width: 700px;
-  background-color: white; /* Це приклад кольору фону, можна видалити або змінити */
+  background-color: white;
   padding: 30px 80px; /* Відступи всередині елемента */
   margin: 0 auto; /* Центрування на сторінці */
   box-sizing: border-box; /* Включає padding і border у ширину елемента */

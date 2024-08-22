@@ -1,6 +1,25 @@
 import { useState } from "react";
 
 function MainInput() {
+  const [placeholderVisible, setPlaceholderVisible] = useState(true);
+  const [cursorVisible, setCursorVisible] = useState(true);
+
+  const handleFocus = () => {
+    setTimeout(() => {
+      setPlaceholderVisible(false);
+      setCursorVisible(false);
+    }, 500);
+  };
+
+  const [placeholderVisible1, setPlaceholderVisible1] = useState(true);
+  const [cursorVisible1, setCursorVisible1] = useState(true);
+
+  const handleFocus1 = () => {
+    setTimeout(() => {
+      setPlaceholderVisible1(false);
+      setCursorVisible1(false);
+    }, 500);
+  };
   const [current, setCurrent] = useState(0);
 
   function hangleClick() {
@@ -104,7 +123,15 @@ function MainInput() {
             style={{ flexGrow: 1, marginLeft: "10px", textAlign: "left" }}
           >
             <p color="grey">Vas a enviar</p>
-            <input className="inputData" placeholder="ENTER" />
+            <input
+              className="inputData"
+              placeholder={placeholderVisible ? "ENTER" : ""}
+              onFocus={handleFocus}
+              style={{
+                caretColor: cursorVisible ? "white" : "transparent",
+                cursor: cursorVisible ? "default" : "none",
+              }}
+            />
           </div>
           <div
             className="rightSide"
@@ -135,7 +162,15 @@ function MainInput() {
             style={{ flexGrow: 1, marginLeft: "10px", textAlign: "left" }}
           >
             <p color="grey">El contacto recibira</p>
-            <input className="inputData" placeholder="ENTER" />
+            <input
+              className="inputData"
+              placeholder={placeholderVisible1 ? "ENTER" : ""}
+              onFocus={handleFocus1}
+              style={{
+                caretColor: cursorVisible1 ? "white" : "transparent",
+                cursor: cursorVisible1 ? "default" : "none",
+              }}
+            />
           </div>
           <div
             className="rightSide"
